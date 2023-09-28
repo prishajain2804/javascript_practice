@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+            <p id="demo"></p>
+        <script>
+                alert("hello world");
+                let a = +prompt("Please enter first number:");
+                let b = +prompt("please enter second number:");
+                let result = a + b;
+                console.log(result);
+                document.getElementById("demo").innerHTML= "This is an addition of two numbers =" + result;
+        </script>
+            
+    </body>
+</html>
