@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <p id="lifetime_supply"></p>
+    <script>
+      let current_age = 22;
+      let maximum_age = 80;
+      let amt_per_day = 5;
+      let life_time_amt = (amt_per_day * 365) * (maximum_age - current_age);
+      document.getElementById('lifetime_supply').innerHTML =
+        "You will need " +
+        life_time_amt +
+        " to last you until the ripe age of " +
+        maximum_age;
+    </script>
+  </body>
+</html>
