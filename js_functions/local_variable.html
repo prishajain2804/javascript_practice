@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Creating an local variable Function</h1>
+        <p>Outside Function the Name id undefiend</p>
+        <p id="Name1"></p>
+        <p id="Name2"></p>
+        <script>
+            let text = "outside function : " + typeof (Name) ;
+            document.getElementById("Name1").innerHTML = text;
+            
+            //Creating a function
+
+            function myFunction(){
+                let Name = "Alisha";
+                let text = "Inside Function: "+ typeof (Name) + " "+ Name;
+                document.getElementById("Name2").innerHTML = text;
+            }
+            
+            // invoking the function 
+
+            myFunction();
+            </script>
+    </body>
+</html>
