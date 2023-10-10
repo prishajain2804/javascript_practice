@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Function that uses different operators</h1>
+    <p>In this example we will change the fahrenheit value to celcius</p>
+    <p id="Celcius"></p>
+    <script>
+      let value = 102;
+      let to_cel = Cel(value);
+      document.getElementById("Celcius").innerHTML = value + " is " + to_cel;
+      function Cel(F){
+        return (5/9) * (F - 32);
+      }
+    </script>
+  </body>
+</html>
