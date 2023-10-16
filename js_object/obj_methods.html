@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <h1>Example of an method and use of this keyword</h1>
+    <p id="exp"></p>
+    <script>
+        const personal_details = {
+            firstName : "Avni",
+            lastName : "Rajput",
+            contact_detail: "04589",
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById("exp").innerHTML = personal_details.fullName();
+        
+    </script>
+</html>
