@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>This is an example of replacing string content</h1>
+        <p>With this method we can replace a specific word to different word</p>
+        <p id="org"></p>
+        <p>The following sence have been replaced</p>
+        <p id="rep"></p>
+
+        <script>
+            let text = "I love reading.";
+            document.getElementById("org").innerHTML = text;
+            let text2 = text.replace("reading" , "dancing");
+            document.getElementById("rep").innerHTML = text2;
+            
+        </script>
+    </body>
+</html>
