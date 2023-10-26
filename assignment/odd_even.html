@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--  Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+ -->
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let num = +prompt("Enter number to check whether it is even or odd:")
+      text=" ";
+      MyFun(num);
+      function MyFun(num){
+          if (num % 2 == 0){
+              text = "Even"
+          }
+          else{
+              text ="odd";
+          }
+      }
+      document.getElementById("demo").innerHTML = num + " is an " + text + " number" ;
+       </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body><p id="demo"></p>
+    <p id="demo1"></p>
+<script>
+    const arr=[34,90,87,45,32,56,23];
+    document.getElementById("demo").innerHTML= arr;
+    let array;
+    const arr2=[];
+    myFun(arr);
+   
+    function myFun(arr){
+     array=arr.reverse();
+     arr2.push(array);
+    }
+    document.getElementById("demo1").innerHTML = arr2;
+</script></body>
+</html>

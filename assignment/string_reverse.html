@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        let str = "This is an string";
+        const myArr = str.split(" ");
+        let arr;
+        let cal;
+        function myFunction(myArr){
+            cal = myArr.reverse();
+            arr=cal.join(" ");
+             }
+        myFunction(myArr);
+         // let str2 = arr.toString();
+        // console.log(typeof(str2));
+        document.getElementById("demo1").innerHTML = arr;
+
+
+    </script>
+</body></html>

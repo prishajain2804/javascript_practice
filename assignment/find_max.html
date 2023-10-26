@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      const arr = [90,87,43,89,10,23,45,54];
+      document.getElementById("demo1").innerHTML = arr;
+
+      arr.sort(function (a, b) {
+        return a - b;
+      });
+      document.getElementById("demo2").innerHTML = arr[0];
+    </script>
+  </body>
+</html>

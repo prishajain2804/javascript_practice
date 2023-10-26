@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="farenheit"></p>
+        <p id="celcius"></p>
+        <script>
+            let value_in_C=20;
+            let value_in_F=20;
+            let cel_to_F =  (value_in_C * 9)/5 + 32;
+            let F_to_cel = ((value_in_F - 32)*5)/9;
+            document.getElementById("farenheit").innerHTML = value_in_C + "°C is " + cel_to_F + "°F";
+            document.getElementById("celcius").innerHTML = value_in_F + "°F is " + F_to_cel + "°C";
+        </script>
+    </body>
+</html>

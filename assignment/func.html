@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const arr2=[ ];
+            function Myfunction(Myarr){
+                for(let i=0 ; i< Myarr.length ;i++){
+                
+                    if (Myarr[i]>=0) {
+                    arr2.push(Myarr[i]);
+                }
+                
+                    
+            }
+        }
+           const Myarr=[4,9,0,4,-4,-10,6,-4,8];
+            Myfunction(Myarr)
+            document.getElementById("demo").innerHTML = arr2;
+        </script>
+    </body>
+</html>

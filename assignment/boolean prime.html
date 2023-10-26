@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id ="demo"></p>
+        <script>
+            let num = +prompt("Enter an element to check forprime number:");
+            let text=" ";
+            Myfun(num);
+            function Myfun(num){
+                for (let i=2; i<=num-1 ; i++){
+                    if(num % i == 0){
+                        text = "False";
+                    }
+                    else{
+                        text="True";
+                    }
+                }
+            }        
+           
+                
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>

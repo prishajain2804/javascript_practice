@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+const arr1 = [6,9,0,4,7];
+const arr2 = ["This", "are", "the", "values"];
+const MyArr =[];
+let merge;
+function Myfun(arr1,arr2){
+ merge = arr1.concat(arr2);
+ MyArr.push(merge);
+}
+Myfun(arr1,arr2);
+
+document.getElementById("demo").innerHTML = MyArr;
+</script>
+
+</body>
+</html>

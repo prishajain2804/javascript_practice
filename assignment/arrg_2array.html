@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both.
+ -->
+ <html>
+    <body>
+        <p id="demo">
+
+        </p>
+        <script>
+            arr1=[1,2,3,10,5,3,14];
+            arr2=[1,4,5,6,14];
+            MyArr=[ ];
+            MyFun(arr1,arr2);
+
+            function MyFun(arr1,arr2){
+                for (let x of arr1){
+                    if (!(arr2.includes(x))){
+                        MyArr.push(x);
+                        console.log(MyArr);                   
+                    }
+                }
+                for (let x of arr2){
+                    if (!(arr1.includes(x))){
+                        MyArr.push(x);
+                        console.log(MyArr);
+                    }
+                }
+            }
+            document.getElementById("demo").innerHTML = MyArr;
+        
+        </script>
+    </body>
+ </html>
