@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>This is an array method that converts an array into string</p>
+        <p id="demo1"></p>
+        The type of the above is:
+        <p id="type1"></p>
+        The converted array into string is:
+        <p id="demo2"></p>
+        Type of the above is:
+        <p id="type2"></p>
+        <script>
+            const fruits=["Apple","Mango","CustardApple","Guava"];
+            document.getElementById("demo1").innerHTML = fruits;
+            let type1 = typeof (fruits);
+            document.getElementById("type1").innerHTML = type1;
+            let str = fruits.toString();
+            document.getElementById("demo2").innerHTML = str;
+            document.getElementById("type2").innerHTML = typeof(str);
+        </script>
+    </body>
+</html>
