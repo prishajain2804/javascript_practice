@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo1"></p>
+        <p>Array after merging</p>
+        <p id="demo2"></p>
+        <script>
+            const items=["chocolate","icecream","chips"]
+            const fruits=["Apple","Mango"];
+            const vegiies =["Potato","onion"];
+            document.getElementById("demo1").innerHTML = items + "<br>" + fruits + "<br>" + vegiies;
+            const food_item= items.concat(fruits,vegiies);
+            document.getElementById("demo2").innerHTML = food_item;
+        </script>
+    </body>
+</html>
