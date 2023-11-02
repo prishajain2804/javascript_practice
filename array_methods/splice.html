@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            const arr=["Apple","mango","Banana","Grapes","Orange"];
+            document.getElementById("demo1").innerHTML = "Orignal Array"+"<br>"+arr;
+            const rem =arr.splice(2,3,"Custurdapple","pineapple");
+            document.getElementById("demo2").innerHTML = "Array after adding:"+"<br>"+arr;
+            document.getElementById("demo3").innerHTML = "elements removed:"+"<br>"+rem;
+        </script>
+    </body>
+</html>
