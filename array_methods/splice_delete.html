@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            const arr=["Apple","mango","Banana","Grapes","Orange"];
+            document.getElementById("demo1").innerHTML = "Orignal Array"+"<br>"+arr;
+            const del =arr.splice(2,2);
+            document.getElementById("demo2").innerHTML = "Array after deleting:"+"<br>"+arr;
+            document.getElementById("demo3").innerHTML = "elements deleted:"+"<br>"+del;
+        </script>
+    </body>
+</html>
