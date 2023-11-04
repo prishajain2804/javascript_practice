@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Click the button to get an random sorted array</h1>
+        <button onclick="myFunction()">Try me!</button>
+        <p id="demo"></p>
+        <script>
+            const arr=[45.23,13,24,56,40];
+            document.getElementById("demo").innerHTML = arr;
+
+            function myFunction(){
+                arr.sort(function(){return 0.5 - Math.random()});
+                document.getElementById("demo").innerHTML = arr;
+            }
+        </script>
+    </body>
+</html>
