@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <script>
+            const arr=[23,13,32,34,12];
+            document.getElementById("demo").innerHTML = "Array before sorting:" +"<br>"+arr;
+            arr.sort(function(a,b){return a-b});
+            document.getElementById("demo2").innerHTML ="Array after sorting:"+ "<br>" +arr;
+        </script>
+    </body>
+</html>
