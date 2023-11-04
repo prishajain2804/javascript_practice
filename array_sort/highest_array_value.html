@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            const arr=[23,13,32,34,12];
+            document.getElementById("demo").innerHTML = "Array before sorting:" +"<br>"+arr;
+            arr.sort(function(a,b){return b-a});
+            document.getElementById("demo2").innerHTML ="Array after sorting:"+ "<br>" +arr;
+            document.getElementById("demo3").innerHTML = "The higgest array value is:"+"<br>" + arr[0];
+
+        </script>
+    </body>
+</html>
