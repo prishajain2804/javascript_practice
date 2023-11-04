@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Click the buttons to sort an array</h1>
+        <button onclick="myFun1()">Sort Alphabetically</button>
+        <button onclick="myFun2()">Sort numerically</button>
+        <p id="demo"></p>
+        <script>
+            const arr=[1,13,23,54,34,9];
+            document.getElementById("demo").innerHTML= arr;
+
+            function myFun1(){
+                arr.sort();
+                document.getElementById("demo").innerHTML = arr;
+            }
+
+            function myFun2(){
+                arr.sort(function(a,b){return a-b});
+                document.getElementById("demo").innerHTML = arr;
+            }
+        </script>
+    </body>
+</html>
