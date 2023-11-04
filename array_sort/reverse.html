@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            const arr=["Chocolate","Fruits","Vegetables","Icecreams"];
+            document.getElementById("demo").innerHTML = "The orignal array is :"+"<br>"+ arr;
+            arr.sort();
+            document.getElementById("demo2").innerHTML = "Elements of an array after sorting:"+"<br>"+arr;
+            arr.reverse();
+            document.getElementById("demo3").innerHTML ="Elements of an array after reversing"+"<br>"+arr;
+        </script>
+    </body>
+</html>
