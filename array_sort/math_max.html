@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <script>
+            const arr=[100,200,800,300,900];
+            document.getElementById("demo").innerHTML = arr;
+
+           
+
+            function myMaxNum(arr){
+                return Math.max.apply(null,arr);
+                
+            }
+            document.getElementById("demo2").innerHTML = "The highest number is:" +"<br>"+ myMaxNum(arr);
+        </script>
+    </body>
+</html>
