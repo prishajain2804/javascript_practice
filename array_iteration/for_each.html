@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Example of an for each Function</h1>
+        <p>The array is printed by using for each function:</p>
+        <p id="demo"></p>
+        <script>
+            const num = [10,34,0,29,30,90];
+            let text="";
+            num.forEach(MyFun);
+            document.getElementById("demo").innerHTML = text;
+            function MyFun(value,index,array){
+                text += value + "<br>";
+            }
+            
+        </script>
+    </body>
+</html>
