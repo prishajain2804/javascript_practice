@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>An example of an array map()</h1>
+        <p>The orignal array is:</p>
+        <p id="demo"></p>
+        <p>Elements after map():</p>
+        <p id="demo2"></p>
+        <script>
+            const arr=[10,20,43,23,5];
+            document.getElementById("demo").innerHTML = arr;
+            const arr2=arr.map(MyFun);
+            document.getElementById("demo2").innerHTML = arr2;
+
+            function MyFun(value,index,array){
+                return value * 7;
+            }
+
+
+        </script>
+
+</body>
+</html>
