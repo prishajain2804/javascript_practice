@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The reduce() Method</h1>
+
+<p>Find the multiplication of all numbers in an array:</p>
+<p>The Orignal array is:</p>
+<p id="demo"></p>
+<p>Array after applying reduceMethod</p>
+<p id="demo2"></p>
+<script>
+const numb = [45, 4, 9, 16, 25];
+document.getElementById("demo").innerHTML = numb;
+let mul = numb.reduce(myFunction);
+
+document.getElementById("demo2").innerHTML = "The multiplication is " + mul;
+
+function myFunction(total, value, index, array) {
+  return total * value;
+}
+</script>
+
+</body>
+</html>
