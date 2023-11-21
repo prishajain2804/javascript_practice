@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Example of an every iteration method</h1>
+        <p>The orignal array is:</p>
+        <p id="demo"></p>
+        <p>Array after applying every method:</p>
+        <p id="demo2"></p>
+        <script>
+            const arr = [5,10,9,8,7,6]
+            let divby5 = arr.some(MyFun);
+            document.getElementById("demo2").innerHTML = divby5;
+            function MyFun(value,index,array){
+                return value%5 ==0;
+            }
+            document.getElementById("demo").innerHTML = arr;
+            
+        </script>
+    </body>
+</html>
