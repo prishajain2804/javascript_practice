@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Example of getMonth ()</h1>
+        <p>This will return  name of month from the created array.</p>
+        <p id="Dte"></p>
+        <p>Month extracted from date is:</p>
+        <p id="year"></p>
+        <script>
+            const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const d = new Date();
+            document.getElementById("Dte").innerHTML = d;
+            const month = months[d.getMonth()];
+            document.getElementById("year").innerHTML =month;
+            </script>
+
+    </body>
+</html>
