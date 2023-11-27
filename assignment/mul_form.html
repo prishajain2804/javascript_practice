@@ -1,0 +1,40 @@
+<!-- Write a JavaScript program to calculate multiplication and division of two numbers (input from user). -->
+<!DOCTYPE html>
+<html>
+  <body>
+    
+      <label for="firstNum">1st Number:</label>
+      <input type="text" id="firstNum" /><br /><br />
+      <label for="secondNum">2nd Number:</label>
+      <input type="text" id="secondNum" /><br /><br />
+     
+      <input type="button" onclick="MyFun1()" value="Multiplication">
+      <input type="button"  onclick="MyFun2()" value="Division">
+      
+    <p id="demo"></p>
+
+    <script>
+     
+      
+      function MyFun1() {
+        let a = document.getElementById("firstNum").value;
+        console.log(a);
+        let b = document.getElementById("secondNum").value;
+        console.log(b);
+        let result = a*b;
+        console.log(result);
+        document.getElementById("demo").innerHTML = result;
+      }
+      
+      function MyFun2() {
+        let a = document.getElementById("firstNum").value;
+        let b = document.getElementById("secondNum").value;
+        let result = a/b;
+        console.log(result);
+        document.getElementById("demo").innerHTML = result;
+      }
+      
+    </script>
+     
+  </body>
+</html>

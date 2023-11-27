@@ -1,0 +1,21 @@
+<!-- Write a JS program to input a number from user and swap first and last digit of the given number.
+           Example- 
+            Input any number: 12345
+Output Number after swapping first and last digit: 52341
+ -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let num = prompt("User input:")
+
+            let arr =num.split("");
+            let pop = arr.pop();
+            arr.unshift(pop);
+            let str1=arr.join("");
+            document.getElementById("demo").innerHTML = str1;
+            console.log(arr);
+        </script>
+    </body>
+</html>

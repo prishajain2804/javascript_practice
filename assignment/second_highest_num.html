@@ -1,0 +1,18 @@
+<!-- Write a function that takes an array of numbers as input and returns the second-highest number in the array.
+ -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            const arr = prompt("Enter numbers:");
+           arr2= arr.split(",");
+            document.getElementById("demo").innerHTML = "The given numbers are:"+ "<br>"+ arr;
+            arr2.sort(function(a, b){return b-a});
+            document.getElementById("demo1").innerHTML = "The sorted array is:"+"<br>"+arr2;
+            document.getElementById("demo2").innerHTML ="The second Higest no. is:" + "<br>" +arr2[1];
+        </script>
+    </body>
+</html>

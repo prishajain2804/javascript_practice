@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                flex-direction: column;
+            }
+            button{
+                border:4px solid black;
+            border-radius: 10px;
+            padding:10px 45px;
+            font-size:20px;
+            color:white;
+            margin-top:50px;
+            background-color:green;
+            align-items:center;
+            }
+        </style>
+    </head>
+  <body>
+    <button onclick="Quotes()">Generate Quote</button>
+    <p id="Quote"></p>
+    <p id="Author"></p>
+    <script>
+      const quote = [
+        "To live is the rarest thing in the world. Most people exist, that is all.",
+        "All the world's a stage, and all the men and women merely players.",
+        "The greatest glory in living lies not in never falling, but in rising every time we fall. ",
+        "You must be the change you wish to see in the world.",
+        "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+        "Spread love everywhere you go. Let no one ever come to you without leaving happier."
+      ];
+      const author = [" Oscar Wilde", "William Shakespeare","Nelson Mandela","Mahatma Gandhi","Helen Keller","Mother Teresa"];
+      function Quotes(){
+        const index_num = Math.floor(Math.random()*quote.length);
+        const random_quotes=quote[index_num];
+        const random_author=author[index_num];
+        document.getElementById("Quote").innerHTML = random_quotes;
+        document.getElementById("Author").innerHTML = random_author;
+
+      }
+    </script>
+  </body>
+</html>

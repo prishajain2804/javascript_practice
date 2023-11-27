@@ -1,0 +1,23 @@
+<!-- The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
+If input is ……….const input = "George Raymond Richard Martin";
+Output should be……….."GRRM";  (HINT: Use Javascript Array Iteration map method)
+ -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let str=prompt("enter The string:");
+            let arr=str.split(" ");
+            let text="";
+            arr.forEach(myFunction);
+            
+
+            function myFunction(value, index, array) {
+                 text += value[0]; 
+            }
+            console.log(typeof("text"));
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>
