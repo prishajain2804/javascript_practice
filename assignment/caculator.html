@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let res;
+
+      const operation = prompt("Enter operator ( either +, -, * or / ): ");
+      const num1 = +prompt("Enter first number: ");
+      const num2 = +prompt("Enter second number: ");
+
+      switch (operation) {
+        case "+":
+          res = num1 + num2;
+          console.log(`${num1} + ${num2} = ${res}`);
+          break;
+
+        case "-":
+          res = num1 - num2;
+          console.log(`${num1} - ${num2} = ${res}`);
+          break;
+
+        case "*":
+          res = num1 * num2;
+          console.log(`${num1} * ${num2} = ${res}`);
+          break;
+
+        case "/":
+          res = num1 / num2;
+          console.log(`${num1} / ${num2} = ${res}`);
+          break;
+
+        default:
+          console.log("invalid operation");
+          break;
+
+          document.getElementById("demo").innerHTML = num1 + operation + num2 + "=" + res;
+      }
+    </script>
+  </body>
+</html>

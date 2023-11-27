@@ -1,0 +1,16 @@
+<!-- Write a function that takes an array of numbers as input and returns a new array with all the numbers doubled.
+ -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const arr = [2,5,4,6,7,8];
+            const arr2 = arr.map(MyFun);
+            function MyFun(value, index, array) {
+                return value * 2;
+            }
+            document.getElementById("demo").innerHTML = arr2;
+        </script>
+    </body>
+</html>

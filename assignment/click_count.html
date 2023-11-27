@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      body {
+        align-content: center;
+        background-color: blue;
+      }
+      div {
+        padding: 80px 50px 80px 50px;
+        margin-top: 20%;
+        margin-bottom: 25%;
+        border-radius: 10px;
+      }
+      button {
+        background-color: red;
+        border-radius: 10px;
+        border-color: red;
+        padding: 10px 40px 10px 40px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+      }
+      button:active {
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="flex" style="background-color: white">
+      <button onclick="Count()">Click Me</button>
+      <p>
+        <b
+          >You clicked The Button
+          <span style="color: red" id="inccount">0</span> Times.</b
+        >
+      </p>
+    </div>
+    <script>
+      function Count() {
+        let count = document.getElementById("inccount").innerHTML;
+        let num = +count;
+        num = num + 1;
+        document.getElementById("inccount").innerHTML = num;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        button{
+            border:4px solid black;
+            border-radius: 10px;
+            padding:10px 45px;
+            font-size:25px;
+            background-color:green;
+            align-items:center;
+        }
+     </style>
+    </head>;
+
+    <body id="bgcolor">
+        <button onclick="MyFun()"> Click Me</button>
+        <script>
+            const colors=["#288BA8","#E389B9","#746AB0","E83845","E069910","FFCCE0"];
+            function MyFun(){
+                const indxnum = Math.floor(Math.random()*colors.length);
+                const ranmcolor = colors[indxnum];
+                document.body.style.backgroundColor = ranmcolor;
+            }
+            
+        </script>
+    </body>
+</html>
