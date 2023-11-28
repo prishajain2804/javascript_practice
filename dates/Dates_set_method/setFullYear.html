@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Example of an setFullYear() method</h1>
+        <p>It can be use to set year value or cimplete full date</p>
+        <p>The following has set the year value</p>
+        <p id="year"></p>
+        <p>The following has set the complete date</p>
+        <p id="date"></p>
+        <script>
+            const d = new Date();
+            d.setFullYear(2021);
+            document.getElementById("year").innerHTML = d;
+            d.setFullYear(2012,2,23);
+            document.getElementById("date").innerHTML = d;
+        </script>
+    </body>
+</html>
