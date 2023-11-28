@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Example of an setDate() method</h1>
+        <p>It can be use to set date value or adds the date value</p>
+        <p>The following has set the date value</p>
+        <p id="year"></p>
+        <p>The following has set the date by adding value</p>
+        <p id="date"></p>
+        <script>
+            const d = new Date();
+            d.setDate(20);
+            document.getElementById("year").innerHTML = d;
+            d.setDate(d.getDate()+20);
+            document.getElementById("date").innerHTML = d;
+        </script>
+    </body>
+</html>

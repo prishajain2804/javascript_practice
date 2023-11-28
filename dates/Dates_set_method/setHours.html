@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>This is an example of setHours()</h1>
+        <p>The orignal date was as follows:</p>
+        <p id="date"></p>
+        <p>Date after setting a hours is as follows:</p>
+        <p id="hours"></p>
+        <script>
+            const d= new Date();
+            document.getElementById("date").innerHTML = d;
+            d.setHours(20);
+            document.getElementById("hours").innerHTML = d;
+        </script>
+    </body>
+</html>

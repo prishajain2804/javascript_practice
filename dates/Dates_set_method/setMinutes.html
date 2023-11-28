@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>This is an example of setMinutes()</h1>
+        <p>The orignal date was as follows:</p>
+        <p id="date"></p>
+        <p>Date after setting a Minutes is as follows:</p>
+        <p id="minutes"></p>
+        <script>
+            const d= new Date();
+            document.getElementById("date").innerHTML = d;
+            d.setMinutes(44);
+            document.getElementById("minutes").innerHTML = d;
+        </script>
+    </body>
+</html>

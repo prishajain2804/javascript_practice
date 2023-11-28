@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>This is an example of setMonth()</h1>
+        <p>The orignal month was as follows:</p>
+        <p id="date"></p>
+        <p>Date after setting a Month is as follows:</p>
+        <p id="month"></p>
+        <script>
+            const d= new Date();
+            document.getElementById("date").innerHTML = d;
+            d.setMonth(3);
+            document.getElementById("month").innerHTML = d;
+        </script>
+    </body>
+</html>

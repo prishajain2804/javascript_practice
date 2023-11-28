@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Comparing Dates</h1>
+        <p>The first date is:</p>
+        <p id="org"></p>
+        <p>The second Date is</p>
+        <p id="org2"></p>
+        <p>Compare Result</p>
+        <p id="comp"></p>
+        <script>
+            let text="";
+            const present = new Date();
+            const someday =new Date();
+            someday.setFullYear(1999,3,28);
+            document.getElementById("org").innerHTML = present;
+            document.getElementById("org2").innerHTML = someday;
+            if (someday > present){
+                text="Today is before April 28,1999";
+            }
+            else{
+                text = "Today is after April 28,1999";
+            }
+            document.getElementById("comp").innerHTML= text;
+        </script>
+    </body>
+</html>
