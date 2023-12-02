@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>This is an example of map</h1>
+    <p>Inthis we have used entrie() method</p>
+    <p>The size of an map is:</p>
+    <p id="size"></p>
+    <p>The elemnts are:</p>
+    <p id="elemt"></p>
+    <script>
+      const fruits =new Map([
+          ["apples", 500],
+          ["bananas", 300],
+          ["oranges", 200]]);
+          document.getElementById("size").innerHTML = fruits.size;
+          let text = "";
+        for (const x of fruits.entries()) {
+          text += x + "<br>";
+        }
+
+        document.getElementById("elemt").innerHTML = text;
+    </script>
+  </body>
+</html>
